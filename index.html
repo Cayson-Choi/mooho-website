@@ -20,11 +20,19 @@
         <nav class="nav-container">
             <a href="#" class="logo">LUMINA<span>CRAFT</span></a>
             <div class="nav-links">
-                <a href="#about">Story</a>
-                <a href="#collection">Collection</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" data-i18n="nav-story">Story</a>
+                <a href="#collection" data-i18n="nav-collection">Collection</a>
+                <a href="#contact" data-i18n="nav-contact">Contact</a>
             </div>
             <div class="nav-actions">
+                <div class="lang-toggle">
+                    <span class="lang-label active" data-lang="ko">KR</span>
+                    <label class="switch">
+                        <input type="checkbox" id="lang-switch">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="lang-label" data-lang="en">EN</span>
+                </div>
                 <button class="cart-btn" aria-label="Cart">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
                     <span class="cart-count">0</span>
@@ -38,10 +46,10 @@
         <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content fade-up">
-            <p class="hero-subtitle">POLYTECHNIC ARTISAN</p>
-            <h1 class="hero-title">공학의 정밀함,<br>예술로 승화되다</h1>
-            <p class="hero-description">낮에는 폴리텍에서 기술을 가르치고, 밤에는 수제 팔찌를 빚습니다.<br>한 치의 오차도 허용하지 않는 공학자의 시선으로 완성한 마스터피스.</p>
-            <a href="#collection" class="btn btn-primary">컬렉션 보기</a>
+            <p class="hero-subtitle" data-i18n="hero-subtitle">POLYTECHNIC ARTISAN</p>
+            <h1 class="hero-title" data-i18n="hero-title">공학의 정밀함,<br>예술로 승화되다</h1>
+            <p class="hero-description" data-i18n="hero-desc">낮에는 폴리텍에서 기술을 가르치고, 밤에는 수제 팔찌를 빚습니다.<br>한 치의 오차도 허용하지 않는 공학자의 시선으로 완성한 마스터피스.</p>
+            <a href="#collection" class="btn btn-primary" data-i18n="hero-btn">컬렉션 보기</a>
         </div>
     </section>
 
@@ -49,9 +57,9 @@
     <section id="about" class="story section">
         <div class="container layout-grid">
             <div class="story-text fade-up">
-                <h2 class="section-title">The Artisan's <br>Dual Life</h2>
-                <p class="section-desc">강의실에서 기계와 시스템의 정확성을 가르치는 일상은, 제 작업실에서 미학적인 정밀함으로 다시 태어납니다. 단순한 취미를 넘어선 상업적 완성도, 모든 팔찌는 견고한 내구성과 우아한 디자인을 동시에 충족하도록 설계되었습니다.</p>
-                <p class="section-desc">최고급 소재만을 엄선하여 100% 수작업으로 제작되는 Lumina Craft의 팔찌는 당신의 일상에 은은한 럭셔리를 선사합니다.</p>
+                <h2 class="section-title" data-i18n="story-title">The Artisan's <br>Dual Life</h2>
+                <p class="section-desc" data-i18n="story-desc1">강의실에서 기계와 시스템의 정확성을 가르치는 일상은, 제 작업실에서 미학적인 정밀함으로 다시 태어납니다. 단순한 취미를 넘어선 상업적 완성도, 모든 팔찌는 견고한 내구성과 우아한 디자인을 동시에 충족하도록 설계되었습니다.</p>
+                <p class="section-desc" data-i18n="story-desc2">최고급 소재만을 엄선하여 100% 수작업으로 제작되는 Lumina Craft의 팔찌는 당신의 일상에 은은한 럭셔리를 선사합니다.</p>
             </div>
             <div class="story-image fade-in">
                 <div class="glass-panel">
@@ -76,8 +84,8 @@
     <section id="collection" class="collection section bg-darker">
         <div class="container">
             <div class="section-header text-center fade-up">
-                <h2 class="section-title">Signature Collection</h2>
-                <p class="section-desc">상업적 퀄리티로 완성된 프리미엄 라인업</p>
+                <h2 class="section-title" data-i18n="collection-title">Signature Collection</h2>
+                <p class="section-desc" data-i18n="collection-subtitle">상업적 퀄리티로 완성된 프리미엄 라인업</p>
             </div>
             
             <div class="product-grid">
@@ -86,11 +94,11 @@
                     <div class="product-img-wrapper">
                         <img src="assets/silver.png" alt="미니멀 실버 팔찌" class="product-img">
                         <div class="product-overlay">
-                            <button class="btn btn-outline add-to-cart">장바구니 담기</button>
+                            <button class="btn btn-outline add-to-cart" data-i18n="btn-cart">장바구니 담기</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">루미너스 실버 뱅글</h3>
+                        <h3 class="product-name" data-i18n="prod1-name">루미너스 실버 뱅글</h3>
                         <p class="product-price">₩ 89,000</p>
                     </div>
                 </div>
@@ -100,11 +108,11 @@
                     <div class="product-img-wrapper">
                         <img src="assets/leather.png" alt="가죽 스틸 팔찌" class="product-img">
                         <div class="product-overlay">
-                            <button class="btn btn-outline add-to-cart">장바구니 담기</button>
+                            <button class="btn btn-outline add-to-cart" data-i18n="btn-cart">장바구니 담기</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">아티산 위브드 레더</h3>
+                        <h3 class="product-name" data-i18n="prod2-name">아티산 위브드 레더</h3>
                         <p class="product-price">₩ 115,000</p>
                     </div>
                 </div>
@@ -114,11 +122,11 @@
                     <div class="product-img-wrapper">
                         <img src="assets/gold.png" alt="골드 체인 팔찌" class="product-img">
                         <div class="product-overlay">
-                            <button class="btn btn-outline add-to-cart">장바구니 담기</button>
+                            <button class="btn btn-outline add-to-cart" data-i18n="btn-cart">장바구니 담기</button>
                         </div>
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">에센셜 골드 체인</h3>
+                        <h3 class="product-name" data-i18n="prod3-name">에센셜 골드 체인</h3>
                         <p class="product-price">₩ 145,000</p>
                     </div>
                 </div>
@@ -129,9 +137,9 @@
     <!-- Call to Action -->
     <section class="cta section">
         <div class="container text-center fade-up">
-            <h2 class="section-title">당신만의 특별한 디자인이 필요하신가요?</h2>
-            <p class="section-desc" style="max-width: 600px; margin: 0 auto 30px;">소재, 길이, 이니셜 각인 등 맞춤형 주문 제작도 가능합니다.<br>폴리텍 교수의 정교한 손길로 당신만의 팔찌를 만들어 드립니다.</p>
-            <a href="#contact" class="btn btn-primary">주문 제작 문의</a>
+            <h2 class="section-title" data-i18n="cta-title">당신만의 특별한 디자인이 필요하신가요?</h2>
+            <p class="section-desc" data-i18n="cta-desc" style="max-width: 600px; margin: 0 auto 30px;">소재, 길이, 이니셜 각인 등 맞춤형 주문 제작도 가능합니다.<br>폴리텍 교수의 정교한 손길로 당신만의 팔찌를 만들어 드립니다.</p>
+            <a href="#contact" class="btn btn-primary" data-i18n="cta-btn">주문 제작 문의</a>
         </div>
     </section>
 
@@ -140,19 +148,19 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="#" class="logo">LUMINA<span>CRAFT</span></a>
-                <p class="footer-desc">공학자의 정밀함과 예술가의 감성이 만난 프리미엄 수제 팔찌.</p>
+                <p class="footer-desc" data-i18n="footer-desc">공학자의 정밀함과 예술가의 감성이 만난 프리미엄 수제 팔찌.</p>
             </div>
             <div class="footer-links">
-                <h3>Customer Service</h3>
-                <a href="#">배송 및 교환</a>
-                <a href="#">자주 묻는 질문</a>
-                <a href="#">이용약관</a>
+                <h3 data-i18n="footer-cs">Customer Service</h3>
+                <a href="#" data-i18n="footer-link1">배송 및 교환</a>
+                <a href="#" data-i18n="footer-link2">자주 묻는 질문</a>
+                <a href="#" data-i18n="footer-link3">이용약관</a>
             </div>
             <div class="footer-contact">
-                <h3>Contact</h3>
+                <h3 data-i18n="footer-contact">Contact</h3>
                 <p>Email: artisan.prof@polytech.edu</p>
                 <p>Instagram: @luminacraft_official</p>
-                <p>Studio: 서울특별시 용산구 (방문 예약제)</p>
+                <p data-i18n="footer-addr">Studio: 서울특별시 용산구 (방문 예약제)</p>
             </div>
         </div>
         <div class="footer-bottom">
